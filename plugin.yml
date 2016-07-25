@@ -1,0 +1,34 @@
+name: KitsPVP
+main: Yoyu\KitsPVP\main
+version: 2.3
+api: 2.0.0
+author: HuaYoyu
+load: "STARTUP"
+description: "KitsPvP is same like pc plugins..."
+website: "https://github.com/Yoyu666/KitPVP"
+commands:
+    kit:
+        description: Kit Command
+        use: "/kit"
+        permission: kit.command
+    kits:
+        description: Show all kits Commands
+        use: "/kits"
+        permission: kits.command
+
+permissions:
+    kit.command:
+        description: "Kit Command"
+        default: true
+    kits.command:
+        description: "Kits Command"
+        default: true
+    kit.free.command:
+        description: "Free"
+        default: true
+    kit.archer.command:
+        description: "Archer"
+        default: true
+    kit.tank.command:
+        description: "Tank"
+        default: op
