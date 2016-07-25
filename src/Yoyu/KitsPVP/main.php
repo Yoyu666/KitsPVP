@@ -95,14 +95,36 @@ class main extends PluginBase implements Listener{
                             
                             $sender->getInventory()->addItem(Item::get(267, 0, 1));
                             $sender->getInventory()->addItem(Item::get(261, 0, 1));
-                            $sender->getInventory()->addItem(Item::get(262, 0, 64));
-                            $sender->getInventory()->addItem(Item::get(322, 0, 10));
+                            $sender->getInventory()->addItem(Item::get(262, 0, 20));
+                            $sender->getInventory()->addItem(Item::get(282, 0, 1));
+                            $sender->getInventory()->addItem(Item::get(282, 0, 1));
                             
                             $sender->getInventory()->setHelmet(Item::get(310, 0, 1));
                             $sender->getInventory()->setChestplate(Item::get(311, 0, 1));
                             $sender->getInventory()->setLeggings(Item::get(312, 0, 1));
                             $sender->getInventory()->setBoots(Item::get(313, 0, 1));
                             $sender->sendMessage($prefix."§aYou have selecter the §cTank §aKit");
+                            $sound1->getLevel()->addSound(new AnvilUseSound($sound1));
+                            break;
+                        case "knight":
+                            if(!$sender->hasPermission("kit.knight.command")){
+                            $sender->sendMessage("§cYou need VIP for use this kit!");
+                            break;
+                            }
+                            $sender->getPlayer()->getInventory()->clearAll();
+                            $sender->getPlayer()->removeAllEffects();
+                            
+                            $sender->getInventory()->addItem(Item::get(267, 0, 1));
+                            $sender->getInventory()->addItem(Item::get(261, 0, 1));
+                            $sender->getInventory()->addItem(Item::get(262, 0, 64));
+                            $sender->getInventory()->addItem(Item::get(332, 0, 10));
+                            $sender->getInventory()->addItem(Item::get(260, 0, 6));
+                            
+                            $sender->getInventory()->setHelmet(Item::get(306, 0, 1));
+                            $sender->getInventory()->setChestplate(Item::get(307, 0, 1));
+                            $sender->getInventory()->setLeggings(Item::get(304, 0, 1));
+                            $sender->getInventory()->setBoots(Item::get(309, 0, 1));
+                            $sender->sendMessage($prefix."§aYou have selecter the §cKnight §aKit!");
                             $sound1->getLevel()->addSound(new AnvilUseSound($sound1));
                             break;
                     }       
