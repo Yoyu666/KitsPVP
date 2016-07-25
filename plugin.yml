@@ -1,6 +1,6 @@
 name: KitsPVP
 main: Yoyu\KitsPVP\main
-version: 2.3
+version: 2.5pre1
 api: 2.0.0
 author: HuaYoyu
 load: "STARTUP"
@@ -31,4 +31,7 @@ permissions:
         default: true
     kit.tank.command:
         description: "Tank"
+        default: op
+    kit.knight.command:
+        description: "knight"
         default: op
