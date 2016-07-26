@@ -37,4 +37,4 @@ permissions:
         default: op
     kit.warrior.command:
         description: "Warrior"
-        default: op
+        default: true
