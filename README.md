@@ -9,10 +9,9 @@
 * NextVersion: 2.5 {soon}
 -  //TODO
  - [x] add Knight Kits
- - [ ] add Warrior Kits
+ - [x] add Warrior Kits
  - [ ] etc.
-* PreVersion: 2.5pre1
-* Version : 2.3
+* Version: 2.5pre1 IS OUT!
 * You also can go [Here](https://github.com/Yoyu666/KitsPVP/releases) to download this plugins.
 - Drop the KitsPVP.phar latest version into the MCPEServer Things... `plugins/` folder. 
 - Restart the server and then the plugin will be loaded :D!
