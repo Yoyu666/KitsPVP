@@ -116,15 +116,36 @@ class main extends PluginBase implements Listener{
                             
                             $sender->getInventory()->addItem(Item::get(267, 0, 1));
                             $sender->getInventory()->addItem(Item::get(261, 0, 1));
-                            $sender->getInventory()->addItem(Item::get(262, 0, 64));
-                            $sender->getInventory()->addItem(Item::get(332, 0, 10));
-                            $sender->getInventory()->addItem(Item::get(260, 0, 6));
+                            $sender->getInventory()->addItem(Item::get(262, 0, 10));
+                            $sender->getInventory()->addItem(Item::get(373, 30, 1));
+                            $sender->getInventory()->addItem(Item::get(282, 0, 1));
                             
                             $sender->getInventory()->setHelmet(Item::get(306, 0, 1));
                             $sender->getInventory()->setChestplate(Item::get(307, 0, 1));
                             $sender->getInventory()->setLeggings(Item::get(304, 0, 1));
                             $sender->getInventory()->setBoots(Item::get(309, 0, 1));
                             $sender->sendMessage($prefix."§aYou have selecter the §cKnight §aKit!");
+                            $sound1->getLevel()->addSound(new AnvilUseSound($sound1));
+                            break;
+                        case "warrior":
+                            if(!$sender->hasPermission("kit.warrior.command")){
+                            $sender->sendMessage("§cEnjoy u free kit!");
+                            break;
+                            }
+                            $sender->getPlayer()->getInventory()->clearAll();
+                            $sender->getPlayer()->removeAllEffects();
+                            
+                            $sender->getInventory()->addItem(Item::get(258, 0, 1));
+                            $sender->getInventory()->addItem(Item::get(373, 30, 1));
+                            $sender->getInventory()->addItem(Item::get(260, 0, 5));
+                            $sender->getInventory()->addItem(Item::get(373, 30, 1));
+                            $sender->getInventory()->addItem(Item::get(282, 0, 1));
+                            
+                            $sender->getInventory()->setHelmet(Item::get(310, 0, 0));
+                            $sender->getInventory()->setChestplate(Item::get(299, 0, 1));
+                            $sender->getInventory()->setLeggings(Item::get(300, 0, 1));
+                            $sender->getInventory()->setBoots(Item::get(305, 0, 1));
+                            $sender->sendMessage($prefix."§aYou have selecter the §bWarrior §aKit!");
                             $sound1->getLevel()->addSound(new AnvilUseSound($sound1));
                             break;
                     }       
@@ -134,10 +155,11 @@ class main extends PluginBase implements Listener{
             case "kits":
                 $sender->sendMessage($prefixD);
                 $sender->sendMessage(" ");
-                $sender->sendMessage($prefix."§a/kit Knight §7{no add yet!}");
+                $sender->sendMessage($prefix."§a/kit §l§dKnight§r §c{Vip only!}");
                 $sender->sendMessage($prefix."§a/kit Free");
                 $sender->sendMessage($prefix."§a/kit Archer");
-                $sender->sendMessage($prefix."§a/kit Tank §7{VIP only}");
+                $sender->sendMessage($prefix."§a/kit §l§dTank§r §c{VIP only!}");
+                $sender->sendMessage($prefix."§a/kit Warrior §7{no fully add yet!}");
                 $sender->sendMessage(" ");
                 $sender->sendMessage($prefixD);
         }
