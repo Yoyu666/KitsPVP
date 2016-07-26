@@ -159,7 +159,7 @@ class main extends PluginBase implements Listener{
                 $sender->sendMessage($prefix."§a/kit Free");
                 $sender->sendMessage($prefix."§a/kit Archer");
                 $sender->sendMessage($prefix."§a/kit §l§dTank§r §c{VIP only!}");
-                $sender->sendMessage($prefix."§a/kit Warrior §7{no fully add yet!}");
+                $sender->sendMessage($prefix."§a/kit Warrior");
                 $sender->sendMessage(" ");
                 $sender->sendMessage($prefixD);
         }
