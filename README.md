@@ -5,7 +5,8 @@
 * KitsPVPpe is a plugin,let u use command for use the kit and go FIGHT!many kit will add at the future!
 - //Ps: Thank for the suppot!Enjoy & Have Fun! ヽ(•ω•ゞ)
 <hr>
-###Download & Installation.
+
+##Download & Installation.
 * NextVersion: 2.5 {soon}
 -  //TODO
  - [x] add Knight Kits
@@ -28,3 +29,4 @@ KitsPVPpe plugin for Your MC:PE-server.
      Enjoy and Have FUN!! :D
      This plugins is starter from 23 July{7} 2016.
 ```
+<hr>
