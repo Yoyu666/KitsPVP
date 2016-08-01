@@ -155,9 +155,9 @@ class main extends PluginBase implements Listener{
             case "kits":
                 $sender->sendMessage($prefixD);
                 $sender->sendMessage(" ");
-                $sender->sendMessage("§e*§eFree Kits-> §a/kit §7{Free/Archer/Warrior}");
+                $sender->sendMessage("§e*§bFree Kits-> §a/kit §7{Free/Archer/Warrior}");
                 $sender->sendMessage(" ");
-                $sender->sendMessage("§e*§l§cVIP Kits-> §a/kit §{§dTank§r§7/§dKnight§7}");
+                $sender->sendMessage("§e*§l§cVIP Kits-> §r§d/kit§r §7{Tank/Knight}");
                 $sender->sendMessage(" ");
                 $sender->sendMessage($prefixD);
         }
