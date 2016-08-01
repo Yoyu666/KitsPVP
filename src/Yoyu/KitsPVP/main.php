@@ -155,9 +155,9 @@ class main extends PluginBase implements Listener{
             case "kits":
                 $sender->sendMessage($prefixD);
                 $sender->sendMessage(" ");
-                $sender->sendMessage("§eFree Kits-> §a/kit §7{Free/Archer/Warrior}");
+                $sender->sendMessage("§e*§eFree Kits-> §a/kit §7{Free/Archer/Warrior}");
                 $sender->sendMessage(" ");
-                $sender->sendMessage($prefix."§a/kit §{§dTank§r§7/§dKnight§7}");
+                $sender->sendMessage("§e*§l§cVIP Kits-> §a/kit §{§dTank§r§7/§dKnight§7}");
                 $sender->sendMessage(" ");
                 $sender->sendMessage($prefixD);
         }
@@ -167,7 +167,7 @@ class main extends PluginBase implements Listener{
     public function PlayerJoinEvent(PlayerJoinEvent $event){
         $player = $event->getPlayer();
         $name = $event->getPlayer()->getName();
-        $prefix = "§cVIP Kits->";
+        $prefix = "§e[§6KITSPVP§e]§f";
         $prefixD = "§e>§7--------*--------§e<";
         
         $player->getPlayer()->getInventory()->clearAll();
