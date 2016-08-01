@@ -155,11 +155,10 @@ class main extends PluginBase implements Listener{
             case "kits":
                 $sender->sendMessage($prefixD);
                 $sender->sendMessage(" ");
-                $sender->sendMessage($prefix."§a/kit §l§dKnight§r §c{Vip only!}");
-                $sender->sendMessage($prefix."§a/kit Free");
-                $sender->sendMessage($prefix."§a/kit Archer");
+                $sender->sendMessage($prefixX."§a/kit {Free/Archer/Warrior}");
+                $sender->sendMessage(" ");
                 $sender->sendMessage($prefix."§a/kit §l§dTank§r §c{VIP only!}");
-                $sender->sendMessage($prefix."§a/kit Warrior");
+                $sender->sendMessage($prefix."§a/kit §l§dKnight§r §c{Vip only!}");
                 $sender->sendMessage(" ");
                 $sender->sendMessage($prefixD);
         }
@@ -171,6 +170,7 @@ class main extends PluginBase implements Listener{
         $name = $event->getPlayer()->getName();
         $prefix = "§4[§6KITSPVP§4] ";
         $prefixD = "§e>§7--------*--------§e<";
+        $prefixX = "§eFreeKits§d>";
         
         $player->getPlayer()->getInventory()->clearAll();
         
