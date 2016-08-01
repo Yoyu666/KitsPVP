@@ -167,7 +167,7 @@ class main extends PluginBase implements Listener{
     public function PlayerJoinEvent(PlayerJoinEvent $event){
         $player = $event->getPlayer();
         $name = $event->getPlayer()->getName();
-        $prefix = "§4[§cVIP Kits4->";
+        $prefix = "§cVIP Kits->";
         $prefixD = "§e>§7--------*--------§e<";
         
         $player->getPlayer()->getInventory()->clearAll();
