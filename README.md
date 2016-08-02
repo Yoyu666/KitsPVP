@@ -1,5 +1,5 @@
 # KitsPVPpe
-* This plugins was only tester on [Genisys](https://github.com/iTXTech/Genisys)!
+* This plugins was only tested on [Genisys](https://github.com/iTXTech/Genisys)!
 * This plugins is for your MCPE server!
 
 ##Info
