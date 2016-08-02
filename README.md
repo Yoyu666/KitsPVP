@@ -11,11 +11,10 @@
 * LastVersion: 2.5pre2
 -  //TODO in 2.5.1
  - [x] add Miner Kits
- - :D
-* You also can go [Here](https://github.com/Yoyu666/KitsPVP/releases) to download this plugins.
+* You can go [Here](https://github.com/Yoyu666/KitsPVP/releases) to download this plugins.
 - Drop the KitsPVP.phar latest version into the MCPEServer Things... `plugins/` folder. 
 - Restart the server and then the plugin will be loaded :D!
-- Or it no work and crash,please post issuse [here](https://github.com/Yoyu666/KitsPVP/issues).
+- Or it no work OR crash,please post issuse [here](https://github.com/Yoyu666/KitsPVP/issues).
 
 ###Note:
 ```
