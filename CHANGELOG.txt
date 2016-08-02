@@ -1,4 +1,7 @@
 //This file only tell about the version what change... :P
+v2.5.1
+soon
+---
 v2.5pre2
 -Better info...
 ---
