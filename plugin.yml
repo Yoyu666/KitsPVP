@@ -1,6 +1,6 @@
-name: KitsPVP
+name: KitsPVP§c
 main: Yoyu\KitsPVP\main
-version: 2.5§6pre2§a
+version: 2.5.1§a
 api: 2.0.0
 author: HuaYoyu
 load: "STARTUP"
@@ -38,3 +38,6 @@ permissions:
     kit.warrior.command:
         description: "Warrior"
         default: true
+    kit.miner.command:
+        description: "Warrior"
+        default: op
