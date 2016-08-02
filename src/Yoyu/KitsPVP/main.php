@@ -148,6 +148,28 @@ class main extends PluginBase implements Listener{
                             $sender->sendMessage($prefix."§aYou have selecter the §bWarrior §aKit!");
                             $sound1->getLevel()->addSound(new AnvilUseSound($sound1));
                             break;
+                        case "miner":
+                            if(!$sender->hasPermission("kit.miner.command")){
+                            $sender->sendMessage("§cMine the player!");
+                            break;
+                            }
+                            $sender->getPlayer()->getInventory()->clearAll();
+                            $sender->getPlayer()->removeAllEffects();
+                            $sender->getPlayer()->addEffect(Effect::getEffect(3)->setAmplifier(1)->setDuration(1000)->setVisible(true));
+
+                            $sender->getInventory()->addItem(Item::get(278, 0, 1));
+                            $sender->getInventory()->addItem(Item::get(282, 0, 1));
+                            $sender->getInventory()->addItem(Item::get(282, 0, 1));
+                            $sender->getInventory()->addItem(Item::get(260, 0, 5));
+                            $sender->getInventory()->addItem(Item::get(322, 0, 1));
+                            
+                            $sender->getInventory()->setHelmet(Item::get(314, 0, 1));
+                            $sender->getInventory()->setChestplate(Item::get(299, 0, 1));
+                            $sender->getInventory()->setLeggings(Item::get(316, 0, 1));
+                            $sender->getInventory()->setBoots(Item::get(301, 0, 1));
+                            $sender->sendMessage($prefix."§aYou have selecter the §bMiner §aKit!");
+                            $sound1->getLevel()->addSound(new GhastSound($sound1));
+                            break;
                     }       
                 }
                 }
@@ -157,7 +179,7 @@ class main extends PluginBase implements Listener{
                 $sender->sendMessage(" ");
                 $sender->sendMessage("§e*§bFree Kits-> §a/kit §7{Free/Archer/Warrior}");
                 $sender->sendMessage(" ");
-                $sender->sendMessage("§e*§l§cVIP Kits-> §r§d/kit§r §7{Tank/Knight}");
+                $sender->sendMessage("§e*§l§cVIP Kits-> §r§d/kit§r §7{Tank/Knight/Miner}");
                 $sender->sendMessage(" ");
                 $sender->sendMessage($prefixD);
         }
