@@ -58,7 +58,7 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->addItem(Item::get(332, 0, 10));
                             
 
-                            $sender->getInventory()->setHelmet(Item::get(288, 0, 1));
+                            $sender->getInventory()->setHelmet(Item::get(298, 0, 1));
                             $sender->getInventory()->setChestplate(Item::get(299, 0, 1));
                             $sender->getInventory()->setLeggings(Item::get(300, 0, 1));
                             $sender->getInventory()->setBoots(Item::get(301, 0, 1));
