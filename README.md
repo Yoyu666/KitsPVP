@@ -13,7 +13,7 @@
  - [x] add Miner Kits
  - :D
 * You can  [Here](https://github.com/Yoyu666/KitsPVP/releases) to download this plugins.
-- Drop the KitsPVP.phar latest version into the MCPEServer `plugins/` folder. 
+- Drop the KitsPVP<version>.phar latest version into the MCPEServer `plugins/` folder. 
 - Restart the server and then the plugin will be loaded :D!
 - If it's not working or crashing ,please report issuse [here](https://github.com/Yoyu666/KitsPVP/issues).
 
@@ -26,7 +26,7 @@ KitsPVPpe plugin for Your MC:PE-server.
      This program is free software: you are allow to recode it,
      Hope that it will be useful for your server,
      Enjoy and Have FUN!! :D
-     This plugins  starter the 23 July{7} 2016.
+     This plugins starter the 23 July{7} 2016.
 ```
 <hr>
 
