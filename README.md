@@ -1,29 +1,30 @@
 # KitsPVPpe
-* This plugins is only tester using [Genisys](https://github.com/iTXTech/Genisys)!
-* Thsi plugins is for U MCPE server!
+* This plugins was only tester on [Genisys](https://github.com/iTXTech/Genisys)!
+* This plugins is for your MCPE server!
 
 ##Info
-* KitsPVPpe is a plugin,let u use command for use the kit and go FIGHT!many kit will add at the future!
-- //Ps: Thank for the suppot!Enjoy & Have Fun! ヽ(•ω•ゞ)
+* KitsPVPPe is a plugin,that let u use the kits and go FIGHT other players or mobs !many more kit will be added in the future!
+- //Ps: Thank to all for the support!Enjoy & Have Fun! ヽ(•ω•ゞ)
 <hr>
 
 ##Download & Installation.
 * LastVersion: 2.5pre2
 -  //TODO in 2.5.1
  - [x] add Miner Kits
-* You can go [Here](https://github.com/Yoyu666/KitsPVP/releases) to download this plugins.
-- Drop the KitsPVP.phar latest version into the MCPEServer Things... `plugins/` folder. 
+ - :D
+* You can  [Here](https://github.com/Yoyu666/KitsPVP/releases) to download this plugins.
+- Drop the KitsPVP.phar latest version into the MCPEServer `plugins/` folder. 
 - Restart the server and then the plugin will be loaded :D!
-- Or it no work OR crash,please post issuse [here](https://github.com/Yoyu666/KitsPVP/issues).
+- If it's not working or crashing ,please report issuse [here](https://github.com/Yoyu666/KitsPVP/issues).
 
 ###Note:
 ```
 KitsPVPpe plugin for Your MC:PE-server.
      Copyright © 2016 HuaYoyu
 
-     This program is free software: you allow recode it,
-     Hope that it will be useful for u server,
+     This program is free software: you are allow to recode it,
+     Hope that it will be useful for your server,
      Enjoy and Have FUN!! :D
-     This plugins is starter from 23 July{7} 2016.
+     This plugins  starter the 23 July{7} 2016.
 ```
 <hr>
