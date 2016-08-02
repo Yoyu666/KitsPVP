@@ -1,6 +1,6 @@
-name: KitsPVP§c
+name: KitsPVP
 main: Yoyu\KitsPVP\main
-version: 2.5.1§a
+version: §c2.5.1§a
 api: 2.0.0
 author: HuaYoyu
 load: "STARTUP"
