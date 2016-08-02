@@ -17,9 +17,9 @@ use pocketmine\event\Listener;
 use pocketmine\plugin\PluginManager;
 use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
+use pocketmine\level\sound\AnvilFallSound;
 use pocketmine\level\sound\AnvilUseSound;
-use pocketmine\level\sound\GhastSound;
-use pocketmine\level\sound\LaunchSound;
+use pocketmine\level\sound\EndermanTeleportSound;
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\event\player\PlayerPreLoginEvent;
 use pocketmine\event\player\PlayerJoinEvent;
@@ -34,7 +34,7 @@ class main extends PluginBase implements Listener{
     public function onCommand(CommandSender $sender, Command $command, $label, array $args){
         
         $prefix = "§4[§6KITSPVP§4]";
-        $prefixD = "§e>§7--------§e*§7--------§e<";
+        $prefixD = "§e>§7---------§a<§e+§a>§7---------§e<";
         $sound1 = $sender->getPlayer();
         
         switch($command->getName()){
@@ -58,7 +58,7 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->addItem(Item::get(332, 0, 10));
                             
 
-                            $sender->getInventory()->setHelmet(Item::get(314, 0, 1));
+                            $sender->getInventory()->setHelmet(Item::get(288, 0, 1));
                             $sender->getInventory()->setChestplate(Item::get(299, 0, 1));
                             $sender->getInventory()->setLeggings(Item::get(300, 0, 1));
                             $sender->getInventory()->setBoots(Item::get(301, 0, 1));
@@ -77,7 +77,8 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->addItem(Item::get(261, 0, 1));
                             $sender->getInventory()->addItem(Item::get(262, 0, 64));
                             $sender->getInventory()->addItem(Item::get(332, 0, 10));
-                            $sender->getInventory()->addItem(Item::get(260, 0, 6));
+                            $sender->getInventory()->addItem(Item::get(260, 0, 5));
+                            $sender->getInventory()->addItem(Item::get(280, 0, 1));
                             
                             $sender->getInventory()->setHelmet(Item::get(298, 0, 1));
                             $sender->getInventory()->setChestplate(Item::get(299, 0, 1));
@@ -98,14 +99,14 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->addItem(Item::get(261, 0, 1));
                             $sender->getInventory()->addItem(Item::get(262, 0, 20));
                             $sender->getInventory()->addItem(Item::get(282, 0, 1));
-                            $sender->getInventory()->addItem(Item::get(282, 0, 1));
+                            $sender->getInventory()->addItem(Item::get(322, 0, 8));
                             
                             $sender->getInventory()->setHelmet(Item::get(310, 0, 1));
-                            $sender->getInventory()->setChestplate(Item::get(311, 0, 1));
+                            $sender->getInventory()->setChestplate(Item::get(307, 0, 1));
                             $sender->getInventory()->setLeggings(Item::get(312, 0, 1));
                             $sender->getInventory()->setBoots(Item::get(313, 0, 1));
                             $sender->sendMessage($prefix."§aYou have selecter the §cTank §aKit");
-                            $sound1->getLevel()->addSound(new AnvilUseSound($sound1));
+                            $sound1->getLevel()->addSound(new AnvilFallSound($sound1));
                             break;
                         case "knight":
                             if(!$sender->hasPermission("kit.knight.command")){
@@ -156,7 +157,7 @@ class main extends PluginBase implements Listener{
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
                             $sender->getPlayer()->removeAllEffects();
-                            $sender->getPlayer()->addEffect(Effect::getEffect(3)->setAmplifier(1)->setDuration(1000)->setVisible(true));
+                            $sender->getPlayer()->addEffect(Effect::getEffect(3)->setAmplifier(1)->setDuration(500)->setVisible(true));
 
                             $sender->getInventory()->addItem(Item::get(278, 0, 1));
                             $sender->getInventory()->addItem(Item::get(282, 0, 1));
@@ -169,7 +170,7 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->setLeggings(Item::get(316, 0, 1));
                             $sender->getInventory()->setBoots(Item::get(301, 0, 1));
                             $sender->sendMessage($prefix."§aYou have selecter the §bMiner §aKit!");
-                            $sound1->getLevel()->addSound(new LaunchSound($sound1));
+                            $sound1->getLevel()->addSound(new EndermanTeleportSound($sound1));
                             break;
                     }       
                 }
@@ -180,8 +181,10 @@ class main extends PluginBase implements Listener{
                 $sender->sendMessage(" ");
                 $sender->sendMessage("§e*§bFree Kits-> §a/kit §7{Free/Archer/Warrior}");
                 $sender->sendMessage(" ");
-                $sender->sendMessage("§e*§l§cVIP Kits-> §r§d/kit§r §7{Tank/Knight/Miner}");
+                $sender->sendMessage("§e*§l§cVIP Kits§r-> §d/kit§r §7{Tank/Knight/Miner}");
                 $sender->sendMessage(" ");
+                $sender->sendMessage("             §a*Enjoy You Kits,Have Fun!!");
+                $sender->sendMessage("             §d*create by: HuaYoyu");
                 $sender->sendMessage($prefixD);
         }
     
@@ -191,7 +194,7 @@ class main extends PluginBase implements Listener{
         $player = $event->getPlayer();
         $name = $event->getPlayer()->getName();
         $prefix = "§e[§6KITSPVP§e]§f";
-        $prefixD = "§e>§7--------*--------§e<";
+        $prefixD = "§e>§7---------§a<§e+§a>§7---------§e<";
         
         $player->getPlayer()->getInventory()->clearAll();
         
@@ -207,7 +210,7 @@ class main extends PluginBase implements Listener{
     }
     
     public function onDropItem(PlayerDropItemEvent $event){
-        if($event->getPlayer()->getInventory()->getItemInHand()->getId() == 268){
+        if($event->getPlayer()->getInventory()->getItemInHand()->getId() == 280){
             $event->getPlayer()->sendMessage("§cYou can not drop this item!");
             $event->setCancelled();
         }
@@ -225,8 +228,8 @@ class main extends PluginBase implements Listener{
 	if($event instanceof EntityDamageByEntityEvent){
 	   $damager = $event->getDamager();
 			if($damager instanceof Player){
-                        if($damager->getInventory()->getItemInHand()->getId() === 268){
-				$event->getEntity()->addEffect(Effect::getEffect(19)->setAmplifier(0)->setDuration(80)->setVisible(true));
+                        if($damager->getInventory()->getItemInHand()->getId() === 280){
+				$event->getEntity()->addEffect(Effect::getEffect(19)->setAmplifier(0)->setDuration(120)->setVisible(true));
                                 }
                                 
                         }
@@ -237,7 +240,7 @@ class main extends PluginBase implements Listener{
             $player = $event->getPlayer();
             if(count($player->getEffects()) != 3) {
             if($event->getItem()->getID() == 282) {
-                $player->setFood(20);
+                $player->setFood(8);
                 $player->addEffect(Effect::getEffect(6)->setAmplifier(1)->setDuration(0)->setVisible(false));
 		$player->sendPopup("§b§oTaken soup!");
                 $player->getInventory()->removeItem(Item::get(282, 0, 1));
