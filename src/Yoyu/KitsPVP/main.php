@@ -19,6 +19,7 @@ use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
 use pocketmine\level\sound\AnvilUseSound;
 use pocketmine\level\sound\GhastSound;
+use pocketmine\level\sound\LaunchSound;
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\event\player\PlayerPreLoginEvent;
 use pocketmine\event\player\PlayerJoinEvent;
@@ -150,7 +151,7 @@ class main extends PluginBase implements Listener{
                             break;
                         case "miner":
                             if(!$sender->hasPermission("kit.miner.command")){
-                            $sender->sendMessage("§cMine the player!");
+                            $sender->sendMessage("§cYou need VIP for use this kit!");
                             break;
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
@@ -168,7 +169,7 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->setLeggings(Item::get(316, 0, 1));
                             $sender->getInventory()->setBoots(Item::get(301, 0, 1));
                             $sender->sendMessage($prefix."§aYou have selecter the §bMiner §aKit!");
-                            $sound1->getLevel()->addSound(new GhastSound($sound1));
+                            $sound1->getLevel()->addSound(new LaunchSound($sound1));
                             break;
                     }       
                 }
