@@ -39,5 +39,5 @@ permissions:
         description: "Warrior"
         default: true
     kit.miner.command:
-        description: "Warrior"
+        description: "Miner"
         default: op
