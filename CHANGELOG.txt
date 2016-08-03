@@ -1,6 +1,28 @@
 //This file only tell about the version what change... :P
 v2.5.1
-soon
+*Tank kit:
+-change a mushroom soup to 8 golden apple
+-diamond chestplate change to Iron
+*Free Kit:
+-golden helmet change to letter
+*archer
+-now Woden_sword no longer Effect<Poision> other player!
+-add a new item(Stick) for effect<Poison> player! :D
+#New Kits Miner<VIP>
+-Helmet    : Golden
+-Chestplate: Letter
+-legging   : Golden
+-boots     : Letter
+*auto effect!
+-Speed :3
+*Item
+-Diamond Pickaxe
+-1 golden apple
+-5 apple
+-2 mushroom soup
+#ETC.
+PS>Yea,Big change(update)?hmm,go find u self the hiden stulfXD
+   Enjoy & Have Fun!!ヽ(•ω•ゞ)
 ---
 v2.5pre2
 -Better info...
