@@ -1,4 +1,14 @@
 //This file only tell about the version what change... :P
+v2.5.2 [03August(8)2016]
+*Tank Kits
+-change a mushroim souo to 2!
+-golden apple from 8 to 6!
+-it will get slownes effect,because it heavy(logic XD
+*Add version when u do /kits
+*Knight Kits
+-sounds change!is like tank?O_o
+*etc
+---
 v2.5.1 [03August(8)2016]
 *Tank kit:
 -change a mushroom soup to 8 golden apple
