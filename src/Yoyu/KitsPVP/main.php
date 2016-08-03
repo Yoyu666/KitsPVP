@@ -63,7 +63,7 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->setChestplate(Item::get(299, 0, 1));
                             $sender->getInventory()->setLeggings(Item::get(300, 0, 1));
                             $sender->getInventory()->setBoots(Item::get(301, 0, 1));
-                            $sender->sendMessage($prefix."§aEnjoy Your Free Kit :3!");
+                            $sender->sendMessage($prefix."§aEnjoy your Kit :3!");
                             $sound1->getLevel()->addSound(new AnvilUseSound($sound1));
                             break;
                         case "archer":
@@ -85,7 +85,7 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->setChestplate(Item::get(299, 0, 1));
                             $sender->getInventory()->setLeggings(Item::get(304, 0, 1));
                             $sender->getInventory()->setBoots(Item::get(309, 0, 1));
-                            $sender->sendMessage($prefix."§aYou have selecter the §cArcher §aKit");
+                            $sender->sendMessage($prefix."§aYou have selecter the §6Archer §aKit");
                             $sound1->getLevel()->addSound(new AnvilUseSound($sound1));
                             break;
                         case "tank":
@@ -107,7 +107,7 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->setChestplate(Item::get(307, 0, 1));
                             $sender->getInventory()->setLeggings(Item::get(312, 0, 1));
                             $sender->getInventory()->setBoots(Item::get(313, 0, 1));
-                            $sender->sendMessage($prefix."§aYou have selecter the §cTank §aKit");
+                            $sender->sendMessage($prefix."§aYou have selecter the §dTank §aKit");
                             $sound1->getLevel()->addSound(new AnvilFallSound($sound1));
                             break;
                         case "knight":
@@ -128,12 +128,12 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->setChestplate(Item::get(307, 0, 1));
                             $sender->getInventory()->setLeggings(Item::get(304, 0, 1));
                             $sender->getInventory()->setBoots(Item::get(309, 0, 1));
-                            $sender->sendMessage($prefix."§aYou have selecter the §cKnight §aKit!");
-                            $sound1->getLevel()->addSound(new AnvilUseSound($sound1));
+                            $sender->sendMessage($prefix."§aYou have selecter the §dKnight §aKit!");
+                            $sound1->getLevel()->addSound(new AnvilFallSound($sound1));
                             break;
                         case "warrior":
                             if(!$sender->hasPermission("kit.warrior.command")){
-                            $sender->sendMessage("§cEnjoy u free kit!");
+                            $sender->sendMessage("§cEnjoy your free kit!");
                             break;
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
@@ -149,7 +149,7 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->setChestplate(Item::get(299, 0, 1));
                             $sender->getInventory()->setLeggings(Item::get(304, 0, 1));
                             $sender->getInventory()->setBoots(Item::get(305, 0, 1));
-                            $sender->sendMessage($prefix."§aYou have selecter the §bWarrior §aKit!");
+                            $sender->sendMessage($prefix."§aYou have selecter the §6Warrior §aKit!");
                             $sound1->getLevel()->addSound(new AnvilUseSound($sound1));
                             break;
                         case "miner":
@@ -171,7 +171,7 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->setChestplate(Item::get(299, 0, 1));
                             $sender->getInventory()->setLeggings(Item::get(316, 0, 1));
                             $sender->getInventory()->setBoots(Item::get(301, 0, 1));
-                            $sender->sendMessage($prefix."§aYou have selecter the §bMiner §aKit!");
+                            $sender->sendMessage($prefix."§aYou have selecter the §dMiner §aKit!");
                             $sound1->getLevel()->addSound(new EndermanTeleportSound($sound1));
                             break;
                     }       
