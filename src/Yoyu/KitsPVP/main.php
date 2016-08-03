@@ -34,8 +34,8 @@ class main extends PluginBase implements Listener{
     public function onCommand(CommandSender $sender, Command $command, $label, array $args){
         
         $prefix = "§4[§6KITSPVP§4]";
-        $prefixD = "§e>§7---------§a<§e+§a>§7---------§e<";
-        $prefixE = "§e>§7----------§e+§7----------§e<";
+        $prefixD = "§e>§7----------§a<§e+§a>§7----------§e<";
+        $prefixE = "§e>§7-----------§e+§7-----------§e<";
         $sound1 = $sender->getPlayer();
         
         switch($command->getName()){
@@ -95,13 +95,13 @@ class main extends PluginBase implements Listener{
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
                             $sender->getPlayer()->removeAllEffects();
-                            $sender->getPlayer()->addEffect(Effect::getEffect(21)->setAmplifier(4)->setDuration(20)->setVisible(true));
+                            $sender->getPlayer()->addEffect(Effect::getEffect(2)->setAmplifier(0)->setDuration(9999)->setVisible(true));
                             
                             $sender->getInventory()->addItem(Item::get(267, 0, 1));
                             $sender->getInventory()->addItem(Item::get(261, 0, 1));
-                            $sender->getInventory()->addItem(Item::get(262, 0, 20));
-                            $sender->getInventory()->addItem(Item::get(282, 0, 1));
-                            $sender->getInventory()->addItem(Item::get(322, 0, 8));
+                            $sender->getInventory()->addItem(Item::get(262, 0, 25));
+                            $sender->getInventory()->addItem(Item::get(282, 0, 2));
+                            $sender->getInventory()->addItem(Item::get(322, 0, 6));
                             
                             $sender->getInventory()->setHelmet(Item::get(310, 0, 1));
                             $sender->getInventory()->setChestplate(Item::get(307, 0, 1));
@@ -187,6 +187,8 @@ class main extends PluginBase implements Listener{
                 $sender->sendMessage(" ");
                 $sender->sendMessage("             §d*§7Enjoy You Kits,Have Fun!!");
                 $sender->sendMessage("             §d*§7Create by: HuaYoyu");
+                $sender->sendMessage("             §d*§7Version: §c2.5.2");
+                $sender->sendMessage(" ");
                 $sender->sendMessage($prefixE);
         }
     
@@ -196,8 +198,8 @@ class main extends PluginBase implements Listener{
         $player = $event->getPlayer();
         $name = $event->getPlayer()->getName();
         $prefix = "§e[§6KITSPVP§e]§f";
-        $prefixD = "§e>§7---------§a<§e+§a>§7---------§e<";
-        $prefixE = "§e>§7----------§e+§7----------§e<";
+        $prefixD = "§e>§7----------§a<§e+§a>§7----------§e<";
+        $prefixE = "§e>§7-----------§e+§7-----------§e<";
         
         $player->getPlayer()->getInventory()->clearAll();
         
