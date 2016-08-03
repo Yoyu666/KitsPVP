@@ -35,6 +35,7 @@ class main extends PluginBase implements Listener{
         
         $prefix = "§4[§6KITSPVP§4]";
         $prefixD = "§e>§7---------§a<§e+§a>§7---------§e<";
+        $prefixE = "§e>§7----------§e+§7----------§e<";
         $sound1 = $sender->getPlayer();
         
         switch($command->getName()){
@@ -143,9 +144,9 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->addItem(Item::get(373, 30, 1));
                             $sender->getInventory()->addItem(Item::get(282, 0, 1));
                             
-                            $sender->getInventory()->setHelmet(Item::get(306, 0, 1));
+                            $sender->getInventory()->setHelmet(Item::get(298, 0, 1));
                             $sender->getInventory()->setChestplate(Item::get(299, 0, 1));
-                            $sender->getInventory()->setLeggings(Item::get(300, 0, 1));
+                            $sender->getInventory()->setLeggings(Item::get(304, 0, 1));
                             $sender->getInventory()->setBoots(Item::get(305, 0, 1));
                             $sender->sendMessage($prefix."§aYou have selecter the §bWarrior §aKit!");
                             $sound1->getLevel()->addSound(new AnvilUseSound($sound1));
@@ -157,7 +158,7 @@ class main extends PluginBase implements Listener{
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
                             $sender->getPlayer()->removeAllEffects();
-                            $sender->getPlayer()->addEffect(Effect::getEffect(3)->setAmplifier(1)->setDuration(500)->setVisible(true));
+                            $sender->getPlayer()->addEffect(Effect::getEffect(1)->setAmplifier(2)->setDuration(500)->setVisible(true));
 
                             $sender->getInventory()->addItem(Item::get(278, 0, 1));
                             $sender->getInventory()->addItem(Item::get(282, 0, 1));
@@ -183,9 +184,9 @@ class main extends PluginBase implements Listener{
                 $sender->sendMessage(" ");
                 $sender->sendMessage("§e*§l§cVIP Kits§r-> §d/kit§r §7{Tank/Knight/Miner}");
                 $sender->sendMessage(" ");
-                $sender->sendMessage("             §a*Enjoy You Kits,Have Fun!!");
-                $sender->sendMessage("             §d*create by: HuaYoyu");
-                $sender->sendMessage($prefixD);
+                $sender->sendMessage("             §d*§7Enjoy You Kits,Have Fun!!");
+                $sender->sendMessage("             §d*§7Create by: HuaYoyu");
+                $sender->sendMessage($prefixE);
         }
     
     }
@@ -195,6 +196,7 @@ class main extends PluginBase implements Listener{
         $name = $event->getPlayer()->getName();
         $prefix = "§e[§6KITSPVP§e]§f";
         $prefixD = "§e>§7---------§a<§e+§a>§7---------§e<";
+        $prefixE = "§e>§7----------§e+§7----------§e<";
         
         $player->getPlayer()->getInventory()->clearAll();
         
@@ -202,7 +204,7 @@ class main extends PluginBase implements Listener{
         $player->sendMessage(" ");
         $player->sendMessage($prefix."§ause §6/kits");
         $player->sendMessage(" ");
-        $player->sendMessage($prefixD);
+        $player->sendMessage($prefixE);
         
         
         $player->getLevel()->addSound(new AnvilUseSound($player));
