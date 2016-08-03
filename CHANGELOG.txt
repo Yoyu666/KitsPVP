@@ -1,11 +1,14 @@
 //This file only tell about the version what change... :P
-v2.5.1
+v2.5.1 [03August(8)2016]
 *Tank kit:
 -change a mushroom soup to 8 golden apple
 -diamond chestplate change to Iron
-*Free Kit:
+*Warrior kit:
+-iron helmet change to letter
+-letter pants change to chain
+*Free kit:
 -golden helmet change to letter
-*archer
+*Archer kit;
 -now Woden_sword no longer Effect<Poision> other player!
 -add a new item(Stick) for effect<Poison> player! :D
 #New Kits Miner<VIP>
