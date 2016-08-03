@@ -8,12 +8,12 @@
 <hr>
 
 ##Download & Installation.
-* LastVersion: 2.5.1
--  //TODO in 2.5.2
+* LastVersion: 2.5.2
+-  //TODO in Future Version
  - [ ] add Op Kits for Admin
  - etc.
 * You can  [Here](https://github.com/Yoyu666/KitsPVP/releases) to download this plugins.
-- Drop the KitsPVP<version>.phar latest version into the MCPEServer `plugins/` folder. 
+- Drop the KitsPVP<version>.phar latest version into the MCPEServer `\plugins/` folder. 
 - Restart the server and then the plugin will be loaded :D!
 - If it's not working or crashing ,please report issuse [here](https://github.com/Yoyu666/KitsPVP/issues).
 
@@ -31,6 +31,6 @@ KitsPVPpe plugin for Your MC:PE-server.
 <hr>
 
 #Server
-//You can go our server to play/test this awesome plugins!
-- ip  :
-- port:
+//You can go our server to `play/test` this awesome plugins!
+- ip  : ...
+- port: ...
