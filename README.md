@@ -8,10 +8,10 @@
 <hr>
 
 ##Download & Installation.
-* LastVersion: 2.5pre2
--  //TODO in 2.5.1
- - [x] add Miner Kits
- - :D
+* LastVersion: 2.5.1
+-  //TODO in 2.5.2
+ - [ ] add Op Kits for Admin
+ - etc.
 * You can  [Here](https://github.com/Yoyu666/KitsPVP/releases) to download this plugins.
 - Drop the KitsPVP<version>.phar latest version into the MCPEServer `plugins/` folder. 
 - Restart the server and then the plugin will be loaded :D!
