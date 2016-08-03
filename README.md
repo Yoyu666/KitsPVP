@@ -21,7 +21,7 @@
 ```
 KitsPVPpe plugin for Your MC:PE-server.
      Copyright © 2016 HuaYoyu
-     Thanks for: YoungRichNigger9
+     Thanks to YoungRichNigger9  for contribution
 
      This program is free software: you are allow to recode it,
      Hope that it will be useful for your server,
