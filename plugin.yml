@@ -41,3 +41,6 @@ permissions:
     kit.miner.command:
         description: "Miner"
         default: op
+    kit.admin.command:
+        description: "Admin"
+        default: op
