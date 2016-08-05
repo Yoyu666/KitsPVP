@@ -34,8 +34,8 @@ class main extends PluginBase implements Listener{
     public function onCommand(CommandSender $sender, Command $command, $label, array $args){
         
         $prefix = "§4[§6KITSPVP§4]";
-        $prefixD = "§e>§7----------§a<§e+§a>§7----------§e<";
-        $prefixE = "§e>§7-----------§e+§7-----------§e<";
+        $prefixD = "§e>§7-----------§a<§e+§a>§7-----------§e<";
+        $prefixE = "§e>§7------------§e+§7------------§e<";
         $sound1 = $sender->getPlayer();
         
         switch($command->getName()){
@@ -95,13 +95,13 @@ class main extends PluginBase implements Listener{
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
                             $sender->getPlayer()->removeAllEffects();
-                            $sender->getPlayer()->addEffect(Effect::getEffect(2)->setAmplifier(0)->setDuration(9999)->setVisible(true));
+                            $sender->getPlayer()->addEffect(Effect::getEffect(10)->setAmplifier(0)->setDuration(99999)->setVisible(true))
                             
                             $sender->getInventory()->addItem(Item::get(267, 0, 1));
                             $sender->getInventory()->addItem(Item::get(261, 0, 1));
                             $sender->getInventory()->addItem(Item::get(262, 0, 25));
                             $sender->getInventory()->addItem(Item::get(282, 0, 2));
-                            $sender->getInventory()->addItem(Item::get(322, 0, 6));
+                            $sender->getInventory()->addItem(Item::get(0, 0, 0));
                             
                             $sender->getInventory()->setHelmet(Item::get(310, 0, 1));
                             $sender->getInventory()->setChestplate(Item::get(307, 0, 1));
@@ -159,7 +159,7 @@ class main extends PluginBase implements Listener{
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
                             $sender->getPlayer()->removeAllEffects();
-                            $sender->getPlayer()->addEffect(Effect::getEffect(1)->setAmplifier(2)->setDuration(500)->setVisible(true));
+                            $sender->getPlayer()->addEffect(Effect::getEffect(1)->setAmplifier(2)->setDuration(99999)->setVisible(true));
 
                             $sender->getInventory()->addItem(Item::get(278, 0, 1));
                             $sender->getInventory()->addItem(Item::get(282, 0, 1));
@@ -174,6 +174,27 @@ class main extends PluginBase implements Listener{
                             $sender->sendMessage($prefix."§aYou have selecter the §dMiner §aKit!");
                             $sound1->getLevel()->addSound(new EndermanTeleportSound($sound1));
                             break;
+                        case "admin":
+                            if(!$sender->hasPermission("kit.admin.command")){
+                            $sender->sendMessage("§cYou Dont Have Permission to use this Kits!");
+                            break;
+                            }
+                            $sender->getPlayer()->getInventory()->clearAll();
+                            $sender->getPlayer()->removeAllEffects();
+                            $sender->getPlayer()->addEffect(Effect::getEffect(11)->setAmplifier(19)->setDuration(99999)->setVisible(true));
+                            $sender->getPlayer()->addEffect(Effect::getEffect(5)->setAmplifier(19)->setDuration(99999)->setVisible(true));
+
+                            $sender->getInventory()->addItem(Item::get(261, 0, 0));
+                            $sender->getInventory()->addItem(Item::get(262, 0, 128));
+                            $sender->getInventory()->addItem(Item::get(332, 0, 80));
+                            
+                            $sender->getInventory()->setHelmet(Item::get(314, 0, 1));
+                            $sender->getInventory()->setChestplate(Item::get(0, 0, ));
+                            $sender->getInventory()->setLeggings(Item::get(0, 0, 0));
+                            $sender->getInventory()->setBoots(Item::get(0, 0, 0));
+                            $sender->sendMessage($prefix."§aLets GO KILL EVERYONE! XD");
+                            $sound1->getLevel()->addSound(new AnvilUseSound($sound1));
+                            break;
                     }       
                 }
                 }
@@ -186,8 +207,8 @@ class main extends PluginBase implements Listener{
                 $sender->sendMessage("§e*§l§cVIP Kits§r-> §d/kit§r §7{Tank/Knight/Miner}");
                 $sender->sendMessage(" ");
                 $sender->sendMessage("             §d*§7Enjoy You Kits,Have Fun!!");
-                $sender->sendMessage("             §d*§7Create by: HuaYoyu");
-                $sender->sendMessage("             §d*§7Version: §c2.5.2");
+                $sender->sendMessage("             §d*§7Create by: HuaYoyu & YoungRichNigger9");
+                $sender->sendMessage("             §d*§7Version: §c2.5.3");
                 $sender->sendMessage(" ");
                 $sender->sendMessage($prefixE);
         }
@@ -198,8 +219,8 @@ class main extends PluginBase implements Listener{
         $player = $event->getPlayer();
         $name = $event->getPlayer()->getName();
         $prefix = "§e[§6KITSPVP§e]§f";
-        $prefixD = "§e>§7----------§a<§e+§a>§7----------§e<";
-        $prefixE = "§e>§7-----------§e+§7-----------§e<";
+        $prefixD = "§e>§7-----------§a<§e+§a>§7-----------§e<";
+        $prefixE = "§e>§7------------§e+§7------------§e<";
         
         $player->getPlayer()->getInventory()->clearAll();
         
