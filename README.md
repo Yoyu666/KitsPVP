@@ -8,13 +8,14 @@
 <hr>
 
 ##Download & Installation.
-* LastVersion: 2.5.2
+* LastVersion: 2.5.3
 -  //TODO in Future Version
  - [ ] add Op Kits for Admin
+      -add at v2.5.3
  - [ ] when u slecter a kits will have particle around the player!
-    - etc.
+      -Sonon
  - etc.
-* You can  [Here](https://github.com/Yoyu666/KitsPVP/releases) to download this plugins.
+* You can Tap [Here](https://github.com/Yoyu666/KitsPVP/releases) to download this plugins.
 - Drop the KitsPVP<version>.phar latest version into the MCPEServer `\plugins/` folder. 
 - Restart the server and then the plugin will be loaded :D!
 - If it's not working or crashing ,please report issuse [here](https://github.com/Yoyu666/KitsPVP/issues).
