@@ -11,6 +11,8 @@
 * LastVersion: 2.5.2
 -  //TODO in Future Version
  - [ ] add Op Kits for Admin
+ - [ ] when u slecter a kits will have particle around the player!
+    - etc.
  - etc.
 * You can  [Here](https://github.com/Yoyu666/KitsPVP/releases) to download this plugins.
 - Drop the KitsPVP<version>.phar latest version into the MCPEServer `\plugins/` folder. 
@@ -21,7 +23,7 @@
 ```
 KitsPVPpe plugin for Your MC:PE-server.
      Copyright © 2016 HuaYoyu
-     Thanks to YoungRichNigger9  for contribution
+     Thanks to YoungRichNigger9 for contribution
 
      This program is free software: you are allow to recode it,
      Hope that it will be useful for your server,
