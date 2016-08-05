@@ -184,12 +184,12 @@ class main extends PluginBase implements Listener{
                             $sender->getPlayer()->addEffect(Effect::getEffect(11)->setAmplifier(19)->setDuration(99999)->setVisible(true));
                             $sender->getPlayer()->addEffect(Effect::getEffect(5)->setAmplifier(19)->setDuration(99999)->setVisible(true));
 
-                            $sender->getInventory()->addItem(Item::get(261, 0, 0));
+                            $sender->getInventory()->addItem(Item::get(261, 0, 1));
                             $sender->getInventory()->addItem(Item::get(262, 0, 128));
                             $sender->getInventory()->addItem(Item::get(332, 0, 80));
                             
                             $sender->getInventory()->setHelmet(Item::get(314, 0, 1));
-                            $sender->getInventory()->setChestplate(Item::get(0, 0, ));
+                            $sender->getInventory()->setChestplate(Item::get(0, 0, 0));
                             $sender->getInventory()->setLeggings(Item::get(0, 0, 0));
                             $sender->getInventory()->setBoots(Item::get(0, 0, 0));
                             $sender->sendMessage($prefix."§aLets GO KILL EVERYONE! XD");
