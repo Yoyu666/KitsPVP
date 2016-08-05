@@ -1,4 +1,13 @@
 //This file only tell about the version what change... :P
+---
+v2.5.3,[05August(8)2016]
+*Tank Kits
+-remove golden apple
+-add new item snowball 16
+-change the effect slowness to regens..
++New Kits for Admin
+-etc...
+---
 v2.5.2 [03August(8)2016]
 *Tank Kits
 -change a mushroim souo to 2!
@@ -45,3 +54,4 @@ v2.5pre1 it out!
 -add Knight Kit
 -some kit item change
 -bug fix...
+---
