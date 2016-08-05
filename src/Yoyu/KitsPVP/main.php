@@ -95,7 +95,7 @@ class main extends PluginBase implements Listener{
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
                             $sender->getPlayer()->removeAllEffects();
-                            $sender->getPlayer()->addEffect(Effect::getEffect(10)->setAmplifier(0)->setDuration(99999)->setVisible(true))
+                            $sender->getPlayer()->addEffect(Effect::getEffect(10)->setAmplifier(0)->setDuration(99999)->setVisible(true));
                             
                             $sender->getInventory()->addItem(Item::get(267, 0, 1));
                             $sender->getInventory()->addItem(Item::get(261, 0, 1));
