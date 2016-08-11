@@ -7,6 +7,7 @@ use pocketmine\command\Command;
 use pocketmine\plugin\PluginBase;
 use pocketmine\entity\Effect;
 use pocketmine\item\Item;
+use pocketmine\item\enchantment\Enchantment;
 use pocketmine\utils\Config;
 use pocketmine\utils\Random;
 use pocketmine\utils\TextFormat as color;
