@@ -58,7 +58,7 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->addItem(Item::get(260, 0, 5));
                             $sender->getInventory()->addItem(Item::get(282, 0, 1));
                             $sender->getInventory()->addItem(Item::get(332, 0, 10));
-                            $sender->getInventory()->addItem(Item::get(262, 0, 1)->addEnchantment(Enchantment::get(Enchantment::SHARPNESS)));
+                            $sender->getInventory()->addItem(Item::get(262, 0, 1)->addEnchantment(Enchantment::getEnchantment(Enchantment::SHARPNESS)));
                             
 
                             $sender->getInventory()->setHelmet(Item::get(298, 0, 1));
