@@ -10,10 +10,10 @@
 ##Download & Installation.
 * LastVersion: 2.5.3
 -  //TODO in Future Version
- - [x] add Op Kits for Admin
-      - add at v2.5.3
- - [ ] when u slecter a kits will have particle around the player!
-      - Soon
+ - [ ] Items with Enchanted [indev]
+      - soon
+ - [ ] when u slecter a kits will have particle around the player! [Help Wanted]
+      - very Soon
  - etc.
 * You can Tap [Here](https://github.com/Yoyu666/KitsPVP/releases) to download this plugins.
 - Drop the KitsPVP<version>.phar latest version into the MCPEServer `\plugins/` folder. 
@@ -32,8 +32,3 @@ KitsPVPpe plugin for Your MC:PE-server.
      This plugins starter the 23 July{7} 2016.
 ```
 <hr>
-
-#Server
-//You can go our server to `play/test` this awesome plugins!
-- ip  : ...
-- port: ...
