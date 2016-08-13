@@ -58,8 +58,9 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->addItem(Item::get(260, 0, 5));
                             $sender->getInventory()->addItem(Item::get(282, 0, 1));
                             $sender->getInventory()->addItem(Item::get(332, 0, 10));
-                            $sender->getInventory()->addItem(Item::get(280, 0, 1)->addEnchantment(Enchantment::getEnchantment(Enchantment::SHARPNESS)->setLevel(2)));//In progress
-                            
+                            $stick = Item::get(280, 0, 1);
+                            $stick->addEnchantment(Enchantment::getEnchantment(Enchantment::TYPE_WEAPON_SHARPNESS)->setLevel(2));
+                            $sender->getInventory()->addItem($stick);
 
                             $sender->getInventory()->setHelmet(Item::get(298, 0, 1));
                             $sender->getInventory()->setChestplate(Item::get(299, 0, 1));
