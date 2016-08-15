@@ -12,7 +12,7 @@
 -  //TODO in Future Version
  - [ ] Items with Enchanted [indev]
       - soon
- - [ ] when u slecter a kits will have particle around the player! [Help Wanted]
+ - [ ] when u selecte a kit you  will have particle around the player! [Help Wanted]
       - very Soon
  - etc.
 * You can Tap [Here](https://github.com/Yoyu666/KitsPVP/releases) to download this plugins.
