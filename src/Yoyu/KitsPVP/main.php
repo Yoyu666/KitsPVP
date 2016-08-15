@@ -209,7 +209,7 @@ class main extends PluginBase implements Listener{
                 $sender->sendMessage(" ");
                 $sender->sendMessage("§e*§l§cVIP Kits§r-> §d/kit§r §7{Tank/Knight/Miner}");
                 $sender->sendMessage(" ");
-                $sender->sendMessage("             §d*§7Enjoy You Kits,Have Fun!!");
+                $sender->sendMessage("             §d*§7Enjoy Your Kit and Have Fun!!");
                 $sender->sendMessage("             §d*§7Create by: HuaYoyu & YoungRichNigger9");
                 $sender->sendMessage("             §d*§7Version: §c2.5.3");
                 $sender->sendMessage(" ");
@@ -229,7 +229,7 @@ class main extends PluginBase implements Listener{
         
         $player->sendMessage($prefixD);
         $player->sendMessage(" ");
-        $player->sendMessage($prefix."§ause §6/kits");
+        $player->sendMessage($prefix."§aUse §6/kits to choose a kit");
         $player->sendMessage(" ");
         $player->sendMessage($prefixE);
         
