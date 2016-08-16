@@ -14,6 +14,8 @@
       - soon
  - [ ] when u selecte a kit you  will have particle around the player! [Help Wanted]
       - very Soon
+ - [ ] add Ninja Kit
+      - soon
  - etc.
 * You can Tap [Here](https://github.com/Yoyu666/KitsPVP/releases) to download this plugins.
 - Drop the KitsPVP<version>.phar latest version into the MCPEServer `\plugins/` folder. 
@@ -24,7 +26,8 @@
 ```
 KitsPVPpe plugin for Your MC:PE-server.
      Copyright © 2016 HuaYoyu
-     Thanks to YoungRichNigger9 for contribution
+     Thanks to YoungRichNigger9 for Help.
+     Thanks to Dktapps for the Enchanted items.
 
      This program is free software: you are allow to recode it,
      Hope that it will be useful for your server,
