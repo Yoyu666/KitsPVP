@@ -1,6 +1,14 @@
-# KitsPVPpe
-* This plugins was only tested on [Genisys](https://github.com/iTXTech/Genisys)!
-* This plugins is for your MCPE server!
+# KitsPVP
+* This plugins was only tester on [Genisys](https://github.com/iTXTech/Genisys) only!
+* suppot MCPE 0.15.X
+* This plugin is let player chose kit for "VS" other player,is add some kits:
+###Free    Kit
+###Archer  Kit
+###Warrior Kit
+###Tank    Kit
+###Knight  Kit
+###Miner   Kit
+###Admin   Kit
 
 ##Info
 * KitsPVPPe is a plugin,that let u use the kits and go FIGHT other players or mobs !many more kit will be added in the future!
@@ -34,4 +42,5 @@ KitsPVPpe plugin for Your MC:PE-server.
      Enjoy and Have FUN!! :D
      This plugins starter the 23 July{7} 2016.
 ```
+
 <hr>
