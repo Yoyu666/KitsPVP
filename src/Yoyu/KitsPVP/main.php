@@ -58,9 +58,9 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->addItem(Item::get(260, 0, 5));
                             $sender->getInventory()->addItem(Item::get(282, 0, 1));
                             $sender->getInventory()->addItem(Item::get(332, 0, 10));
-                            $stick = Item::get(280, 0, 1);
-                            $stick->addEnchantment(Enchantment::getEnchantment(Enchantment::TYPE_WEAPON_SHARPNESS)->setLevel(2));
-                            $sender->getInventory()->addItem($stick);
+                            $Item = Item::get(280, 0, 1);
+                            $Item->addEnchantment(Enchantment::getEnchantment(Enchantment::TYPE_WEAPON_SHARPNESS)->setLevel(1));
+                            $sender->getInventory()->addItem($Item);
 
                             $sender->getInventory()->setHelmet(Item::get(298, 0, 1));
                             $sender->getInventory()->setChestplate(Item::get(299, 0, 1));
@@ -164,7 +164,9 @@ class main extends PluginBase implements Listener{
                             $sender->getPlayer()->removeAllEffects();
                             $sender->getPlayer()->addEffect(Effect::getEffect(1)->setAmplifier(2)->setDuration(99999)->setVisible(true));
 
-                            $sender->getInventory()->addItem(Item::get(278, 0, 1));
+                            $Item = Item::get(278, 0, 1);
+                            $Item->addEnchantment(Enchantment::getEnchantment(Enchantment::TYPE_WEAPON_SHARPNESS)->setLevel(3));
+                            $sender->getInventory()->addItem($Item);
                             $sender->getInventory()->addItem(Item::get(282, 0, 1));
                             $sender->getInventory()->addItem(Item::get(282, 0, 1));
                             $sender->getInventory()->addItem(Item::get(260, 0, 5));
