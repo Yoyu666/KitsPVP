@@ -164,7 +164,9 @@ class main extends PluginBase implements Listener{
                             $sender->getPlayer()->removeAllEffects();
                             $sender->getPlayer()->addEffect(Effect::getEffect(1)->setAmplifier(2)->setDuration(99999)->setVisible(true));
 
-                            $sender->getInventory()->addItem(Item::get(278, 0, 1));
+                            $Item = Item::get(278, 0, 1);
+                            $Item->addEnchantment(Enchantment::getEnchantment(Enchantment::TYPE_WEAPON_SHARPNESS)->setLevel(3));
+                            $sender->getInventory()->addItem($Item);
                             $sender->getInventory()->addItem(Item::get(282, 0, 1));
                             $sender->getInventory()->addItem(Item::get(282, 0, 1));
                             $sender->getInventory()->addItem(Item::get(260, 0, 5));
