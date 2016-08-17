@@ -88,12 +88,12 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->setChestplate(Item::get(299, 0, 1));
                             $sender->getInventory()->setLeggings(Item::get(304, 0, 1));
                             $sender->getInventory()->setBoots(Item::get(309, 0, 1));
-                            $sender->sendMessage($prefix."§aYou have selecter the §6Archer §aKit");
+                            $sender->sendMessage($prefix."§aYou have selected the §6Archer §aKit");
                             $sound1->getLevel()->addSound(new AnvilUseSound($sound1));
                             break;
                         case "tank":
                             if(!$sender->hasPermission("kit.tank.command")){
-                            $sender->sendMessage("§cYou need VIP for use this kit!");
+                            $sender->sendMessage("§cYou need VIP to use this kit!");
                             break;
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
@@ -115,7 +115,7 @@ class main extends PluginBase implements Listener{
                             break;
                         case "knight":
                             if(!$sender->hasPermission("kit.knight.command")){
-                            $sender->sendMessage("§cYou need VIP for use this kit!");
+                            $sender->sendMessage("§cYou need VIP to use this kit!");
                             break;
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
@@ -157,7 +157,7 @@ class main extends PluginBase implements Listener{
                             break;
                         case "miner":
                             if(!$sender->hasPermission("kit.miner.command")){
-                            $sender->sendMessage("§cYou need VIP for use this kit!");
+                            $sender->sendMessage("§cYou need VIP to use this kit!");
                             break;
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
@@ -231,7 +231,7 @@ class main extends PluginBase implements Listener{
         
         $player->sendMessage($prefixD);
         $player->sendMessage(" ");
-        $player->sendMessage($prefix."§aUse §6/kits to choose a kit");
+        $player->sendMessage($prefix." §aUse §6/kits to choose a kit");
         $player->sendMessage(" ");
         $player->sendMessage($prefixE);
         
@@ -242,15 +242,15 @@ class main extends PluginBase implements Listener{
     
     public function onDropItem(PlayerDropItemEvent $event){
         if($event->getPlayer()->getInventory()->getItemInHand()->getId() == 280){
-            $event->getPlayer()->sendMessage("§cYou can not drop this item!");
+            $event->getPlayer()->sendMessage("§cYou can't not drop this item!");
             $event->setCancelled();
         }
         if($event->getPlayer()->getInventory()->getItemInHand()->getId() == 282){
-            $event->getPlayer()->sendMessage("§cYou can not drop this item!");
+            $event->getPlayer()->sendMessage("§cYou can't not drop this item!");
             $event->setCancelled();
         }
         if($event->getPlayer()->getInventory()->getItemInHand()->getId() == 322){
-            $event->getPlayer()->sendMessage("§ccYou can not drop this item!");
+            $event->getPlayer()->sendMessage("§ccYou can't not drop this item!");
             $event->setCancelled();
         }
     }
