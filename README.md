@@ -1,7 +1,9 @@
 # KitsPVP
-* This plugins was only tester on [Genisys](https://github.com/iTXTech/Genisys) only!
-* suppot MCPE 0.15.X
-* This plugin is let player chose kit for "VS" other player,is add some kits:
+* This plugins was only tester on [Genisys](https://github.com/iTXTech/Genisys) only!and has not been tested on any other server software. If you find compatibility issues, please use the [issue tracker](https://github.com/Yoyu666/KitsPVP/issue) to report them.
+* support MCPE 0.15.X
+* This plugin  let players choose kit to battle other players:
+* Kits that have been added , many more kit will be added in the future!
+- //Ps: Thank to all for the support!Enjoy & Have Fun! ヽ(•ω•ゞ)
 
 ###Free    Kit
 ###Archer  Kit
@@ -10,11 +12,6 @@
 ###Knight  Kit
 ###Miner   Kit
 ###Admin   Kit
-
-##Info
-* KitsPVPPe is a plugin,that let u use the kits and go FIGHT other players or mobs !many more kit will be added in the future!
-- //Ps: Thank to all for the support!Enjoy & Have Fun! ヽ(•ω•ゞ)
-<hr>
 
 ##Download & Installation.
 * LastVersion: 2.5.3
