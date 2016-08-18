@@ -53,6 +53,7 @@ class main extends PluginBase implements Listener{
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
                             $sender->getPlayer()->removeAllEffects();
+                            $sender->getPlayer()->addEffect(Effect::getEffect(16)->setAmplifier(0)->setDuration(99999)->setVisible(true));
                             
                             $sender->getInventory()->addItem(Item::get(272, 0, 1));
                             $sender->getInventory()->addItem(Item::get(260, 0, 5));
@@ -76,6 +77,7 @@ class main extends PluginBase implements Listener{
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
                             $sender->getPlayer()->removeAllEffects();
+                            $sender->getPlayer()->addEffect(Effect::getEffect(16)->setAmplifier(0)->setDuration(99999)->setVisible(true));
                             
                             $sender->getInventory()->addItem(Item::get(268, 0, 1));
                             $sender->getInventory()->addItem(Item::get(261, 0, 1));
@@ -99,8 +101,11 @@ class main extends PluginBase implements Listener{
                             $sender->getPlayer()->getInventory()->clearAll();
                             $sender->getPlayer()->removeAllEffects();
                             $sender->getPlayer()->addEffect(Effect::getEffect(10)->setAmplifier(0)->setDuration(99999)->setVisible(true));
+                            $sender->getPlayer()->addEffect(Effect::getEffect(16)->setAmplifier(0)->setDuration(99999)->setVisible(true));
                             
-                            $sender->getInventory()->addItem(Item::get(267, 0, 1));
+                            $Item = Item::get(267, 0, 1);
+                            $Item->addEnchantment(Enchantment::getEnchantment(Enchantment::TYPE_WEAPON_SHARPNESS)->setLevel(2));
+                            $sender->getInventory()->addItem($Item);
                             $sender->getInventory()->addItem(Item::get(261, 0, 1));
                             $sender->getInventory()->addItem(Item::get(262, 0, 25));
                             $sender->getInventory()->addItem(Item::get(282, 0, 2));
@@ -120,6 +125,7 @@ class main extends PluginBase implements Listener{
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
                             $sender->getPlayer()->removeAllEffects();
+                            $sender->getPlayer()->addEffect(Effect::getEffect(16)->setAmplifier(0)->setDuration(99999)->setVisible(true));
                             
                             $sender->getInventory()->addItem(Item::get(267, 0, 1));
                             $sender->getInventory()->addItem(Item::get(261, 0, 1));
@@ -141,6 +147,7 @@ class main extends PluginBase implements Listener{
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
                             $sender->getPlayer()->removeAllEffects();
+                            $sender->getPlayer()->addEffect(Effect::getEffect(16)->setAmplifier(0)->setDuration(99999)->setVisible(true));
                             
                             $sender->getInventory()->addItem(Item::get(258, 0, 1));
                             $sender->getInventory()->addItem(Item::get(373, 30, 1));
@@ -163,9 +170,10 @@ class main extends PluginBase implements Listener{
                             $sender->getPlayer()->getInventory()->clearAll();
                             $sender->getPlayer()->removeAllEffects();
                             $sender->getPlayer()->addEffect(Effect::getEffect(1)->setAmplifier(2)->setDuration(99999)->setVisible(true));
+                            $sender->getPlayer()->addEffect(Effect::getEffect(16)->setAmplifier(0)->setDuration(99999)->setVisible(true));
 
                             $Item = Item::get(278, 0, 1);
-                            $Item->addEnchantment(Enchantment::getEnchantment(Enchantment::TYPE_WEAPON_SHARPNESS)->setLevel(3));
+                            $Item->addEnchantment(Enchantment::getEnchantment(Enchantment::TYPE_WEAPON_SHARPNESS)->setLevel(4));
                             $sender->getInventory()->addItem($Item);
                             $sender->getInventory()->addItem(Item::get(282, 0, 1));
                             $sender->getInventory()->addItem(Item::get(282, 0, 1));
@@ -175,7 +183,7 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->setHelmet(Item::get(314, 0, 1));
                             $sender->getInventory()->setChestplate(Item::get(299, 0, 1));
                             $sender->getInventory()->setLeggings(Item::get(316, 0, 1));
-                            $sender->getInventory()->setBoots(Item::get(301, 0, 1));
+                            $sender->getInventory()->setBoots(Item::get(317, 0, 1));
                             $sender->sendMessage($prefix."§aYou have selecter the §dMiner §aKit!");
                             $sound1->getLevel()->addSound(new EndermanTeleportSound($sound1));
                             break;
@@ -188,15 +196,16 @@ class main extends PluginBase implements Listener{
                             $sender->getPlayer()->removeAllEffects();
                             $sender->getPlayer()->addEffect(Effect::getEffect(11)->setAmplifier(19)->setDuration(99999)->setVisible(true));
                             $sender->getPlayer()->addEffect(Effect::getEffect(5)->setAmplifier(19)->setDuration(99999)->setVisible(true));
+                            $sender->getPlayer()->addEffect(Effect::getEffect(16)->setAmplifier(0)->setDuration(99999)->setVisible(true));
 
                             $sender->getInventory()->addItem(Item::get(261, 0, 1));
                             $sender->getInventory()->addItem(Item::get(262, 0, 128));
                             $sender->getInventory()->addItem(Item::get(332, 0, 80));
                             
                             $sender->getInventory()->setHelmet(Item::get(314, 0, 1));
-                            $sender->getInventory()->setChestplate(Item::get(0, 0, 0));
-                            $sender->getInventory()->setLeggings(Item::get(0, 0, 0));
-                            $sender->getInventory()->setBoots(Item::get(0, 0, 0));
+                            $sender->getInventory()->setChestplate(Item::get(315, 0, 0));
+                            $sender->getInventory()->setLeggings(Item::get(316, 0, 0));
+                            $sender->getInventory()->setBoots(Item::get(317, 0, 0));
                             $sender->sendMessage($prefix."§aLets GO KILL EVERYONE! XD");
                             $sound1->getLevel()->addSound(new AnvilUseSound($sound1));
                             break;
@@ -213,7 +222,7 @@ class main extends PluginBase implements Listener{
                 $sender->sendMessage(" ");
                 $sender->sendMessage("             §d*§7Enjoy Your Kit and Have Fun!!");
                 $sender->sendMessage("             §d*§7Create by: HuaYoyu & YoungRichNigger9");
-                $sender->sendMessage("             §d*§7Version: §c2.5.3");
+                $sender->sendMessage("             §d*§7Version: §c1.0.0alpha");
                 $sender->sendMessage(" ");
                 $sender->sendMessage($prefixE);
         }
@@ -223,17 +232,6 @@ class main extends PluginBase implements Listener{
     public function PlayerJoinEvent(PlayerJoinEvent $event){
         $player = $event->getPlayer();
         $name = $event->getPlayer()->getName();
-        $prefix = "§e[§6KITSPVP§e]§f";
-        $prefixD = "§e>§7-----------§a<§e+§a>§7-----------§e<";
-        $prefixE = "§e>§7------------§e+§7------------§e<";
-        
-        $player->getPlayer()->getInventory()->clearAll();
-        
-        $player->sendMessage($prefixD);
-        $player->sendMessage(" ");
-        $player->sendMessage($prefix." §aUse §6/kits to choose a kit");
-        $player->sendMessage(" ");
-        $player->sendMessage($prefixE);
         
         
         $player->getLevel()->addSound(new AnvilUseSound($player));
