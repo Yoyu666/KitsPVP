@@ -232,17 +232,6 @@ class main extends PluginBase implements Listener{
     public function PlayerJoinEvent(PlayerJoinEvent $event){
         $player = $event->getPlayer();
         $name = $event->getPlayer()->getName();
-        $prefix = "§e[§6KITSPVP§e]§f";
-        $prefixD = "§e>§7-----------§a<§e+§a>§7-----------§e<";
-        $prefixE = "§e>§7------------§e+§7------------§e<";
-        
-        $player->getPlayer()->getInventory()->clearAll();
-        
-        $player->sendMessage($prefixD);
-        $player->sendMessage(" ");
-        $player->sendMessage($prefix." §aUse §6/kits to choose a kit");
-        $player->sendMessage(" ");
-        $player->sendMessage($prefixE);
         
         
         $player->getLevel()->addSound(new AnvilUseSound($player));
