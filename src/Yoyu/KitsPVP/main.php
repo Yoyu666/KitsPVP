@@ -103,7 +103,9 @@ class main extends PluginBase implements Listener{
                             $sender->getPlayer()->addEffect(Effect::getEffect(10)->setAmplifier(0)->setDuration(99999)->setVisible(true));
                             $sender->getPlayer()->addEffect(Effect::getEffect(16)->setAmplifier(0)->setDuration(99999)->setVisible(true));
                             
-                            $sender->getInventory()->addItem(Item::get(267, 0, 1));
+                            $Item = Item::get(267, 0, 1);
+                            $Item->addEnchantment(Enchantment::getEnchantment(Enchantment::TYPE_WEAPON_SHARPNESS)->setLevel(2));
+                            $sender->getInventory()->addItem($Item);
                             $sender->getInventory()->addItem(Item::get(261, 0, 1));
                             $sender->getInventory()->addItem(Item::get(262, 0, 25));
                             $sender->getInventory()->addItem(Item::get(282, 0, 2));
@@ -171,7 +173,7 @@ class main extends PluginBase implements Listener{
                             $sender->getPlayer()->addEffect(Effect::getEffect(16)->setAmplifier(0)->setDuration(99999)->setVisible(true));
 
                             $Item = Item::get(278, 0, 1);
-                            $Item->addEnchantment(Enchantment::getEnchantment(Enchantment::TYPE_WEAPON_SHARPNESS)->setLevel(3));
+                            $Item->addEnchantment(Enchantment::getEnchantment(Enchantment::TYPE_WEAPON_SHARPNESS)->setLevel(4));
                             $sender->getInventory()->addItem($Item);
                             $sender->getInventory()->addItem(Item::get(282, 0, 1));
                             $sender->getInventory()->addItem(Item::get(282, 0, 1));
@@ -181,7 +183,7 @@ class main extends PluginBase implements Listener{
                             $sender->getInventory()->setHelmet(Item::get(314, 0, 1));
                             $sender->getInventory()->setChestplate(Item::get(299, 0, 1));
                             $sender->getInventory()->setLeggings(Item::get(316, 0, 1));
-                            $sender->getInventory()->setBoots(Item::get(301, 0, 1));
+                            $sender->getInventory()->setBoots(Item::get(317, 0, 1));
                             $sender->sendMessage($prefix."§aYou have selecter the §dMiner §aKit!");
                             $sound1->getLevel()->addSound(new EndermanTeleportSound($sound1));
                             break;
