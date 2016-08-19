@@ -1,6 +1,6 @@
 name: §6KitsPVP§c
 main: Yoyu\KitsPVP\main
-version: §c1.0.0alpha§a
+version: §c1.0alpha§a
 api: 2.0.0
 author: HuaYoyu
 load: "STARTUP"
