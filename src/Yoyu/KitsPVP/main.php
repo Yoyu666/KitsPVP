@@ -199,13 +199,17 @@ class main extends PluginBase implements Listener{
                             $sender->getPlayer()->addEffect(Effect::getEffect(16)->setAmplifier(0)->setDuration(99999)->setVisible(true));
 
                             $sender->getInventory()->addItem(Item::get(261, 0, 1));
-
                             $Item = Item::get(349, 0, 1);
                             $Item->addEnchantment(Enchantment::getEnchantment(Enchantment::TYPE_WEAPON_SHARPNESS)->setLevel(8));
                             $Item->setCustomName("§o§bSlap Them All~!")
                             $sender->getInventory()->addItem($Item);
+                            $Item = Item::get(280, 0, 1);
+                            $Item->addEnchantment(Enchantment::getEnchantment(Enchantment::TYPE_WEAPON_FIRE_ASPECT)->setLevel(1));
+                            $Item->setCustomName("§o§bLengend Stick~!")
+                            $sender->getInventory()->addItem($Item);
                             $sender->getInventory()->addItem(Item::get(262, 0, 128));
                             $sender->getInventory()->addItem(Item::get(332, 0, 80));
+                            $sender->getInventory()->addItem(Item::get(322, 0, 64));
                             
                             $sender->getInventory()->setHelmet(Item::get(314, 0, 1));
                             $sender->getInventory()->setChestplate(Item::get(315, 0, 0));
