@@ -169,7 +169,7 @@ class main extends PluginBase implements Listener{
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
                             $sender->getPlayer()->removeAllEffects();
-                            $sender->getPlayer()->addEffect(Effect::getEffect(1)->setAmplifier(2)->setDuration(99999)->setVisible(true));
+                            $sender->getPlayer()->addEffect(Effect::getEffect(1)->setAmplifier(1)->setDuration(99999)->setVisible(true));
                             $sender->getPlayer()->addEffect(Effect::getEffect(16)->setAmplifier(0)->setDuration(99999)->setVisible(true));
 
                             $Item = Item::get(278, 0, 1);
@@ -194,18 +194,18 @@ class main extends PluginBase implements Listener{
                             }
                             $sender->getPlayer()->getInventory()->clearAll();
                             $sender->getPlayer()->removeAllEffects();
-                            $sender->getPlayer()->addEffect(Effect::getEffect(11)->setAmplifier(19)->setDuration(99999)->setVisible(true));
-                            $sender->getPlayer()->addEffect(Effect::getEffect(5)->setAmplifier(19)->setDuration(99999)->setVisible(true));
+                            $sender->getPlayer()->addEffect(Effect::getEffect(11)->setAmplifier(4)->setDuration(99999)->setVisible(true));
+                            $sender->getPlayer()->addEffect(Effect::getEffect(1)->setAmplifier(2)->setDuration(99999)->setVisible(true));
                             $sender->getPlayer()->addEffect(Effect::getEffect(16)->setAmplifier(0)->setDuration(99999)->setVisible(true));
 
                             $sender->getInventory()->addItem(Item::get(261, 0, 1));
                             $Item = Item::get(349, 0, 1);
                             $Item->addEnchantment(Enchantment::getEnchantment(Enchantment::TYPE_WEAPON_SHARPNESS)->setLevel(8));
-                            $Item->setCustomName("§o§bSlap Them All~!")
+                            $Item->setCustomName("§o§bSlap Them All~!");
                             $sender->getInventory()->addItem($Item);
                             $Item = Item::get(280, 0, 1);
                             $Item->addEnchantment(Enchantment::getEnchantment(Enchantment::TYPE_WEAPON_FIRE_ASPECT)->setLevel(1));
-                            $Item->setCustomName("§o§bLengend Stick~!")
+                            $Item->setCustomName("§o§bLengend Stick~!");
                             $sender->getInventory()->addItem($Item);
                             $sender->getInventory()->addItem(Item::get(262, 0, 128));
                             $sender->getInventory()->addItem(Item::get(332, 0, 80));
