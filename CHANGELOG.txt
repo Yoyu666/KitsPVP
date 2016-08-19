@@ -1,6 +1,11 @@
 //This file only tell about the version what change... :P
+v1.0alpha [19August(8)2016]
+-some kits have enchanted item now
+-more clean ?
+-remove some useless code
+-etc. :D
 ---
-v2.5.3,[05August(8)2016]
+v2.5.3 [05August(8)2016]
 *Tank Kits
 -remove golden apple
 -add new item snowball 16
