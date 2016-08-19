@@ -199,6 +199,11 @@ class main extends PluginBase implements Listener{
                             $sender->getPlayer()->addEffect(Effect::getEffect(16)->setAmplifier(0)->setDuration(99999)->setVisible(true));
 
                             $sender->getInventory()->addItem(Item::get(261, 0, 1));
+
+                            $Item = Item::get(349, 0, 1);
+                            $Item->addEnchantment(Enchantment::getEnchantment(Enchantment::TYPE_WEAPON_SHARPNESS)->setLevel(8));
+                            $Item->setCustomName("§o§bSlap Them All~!")
+                            $sender->getInventory()->addItem($Item);
                             $sender->getInventory()->addItem(Item::get(262, 0, 128));
                             $sender->getInventory()->addItem(Item::get(332, 0, 80));
                             
@@ -216,13 +221,11 @@ class main extends PluginBase implements Listener{
             case "kits":
                 $sender->sendMessage($prefixD);
                 $sender->sendMessage(" ");
-                $sender->sendMessage("§e*§bFree Kits-> §a/kit §7{Free/Archer/Warrior}");
-                $sender->sendMessage(" ");
-                $sender->sendMessage("§e*§l§cVIP Kits§r-> §d/kit§r §7{Tank/Knight/Miner}");
+                $sender->sendMessage("§e*§bFree Kits §f§o-> §a/kit §7{Free/Archer/Warrior}");
+                $sender->sendMessage("§e*§l§cVIP Kits§r §f§o-> §d/kit§r §7{Tank/Knight/Miner}");
                 $sender->sendMessage(" ");
                 $sender->sendMessage("             §d*§7Enjoy Your Kit and Have Fun!!");
-                $sender->sendMessage("             §d*§7Create by: HuaYoyu & YoungRichNigger9");
-                $sender->sendMessage("             §d*§7Version: §c1.0.0alpha");
+                $sender->sendMessage("             §d*§7Version: §c1.0alpha");
                 $sender->sendMessage(" ");
                 $sender->sendMessage($prefixE);
         }
