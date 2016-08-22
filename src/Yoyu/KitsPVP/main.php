@@ -276,7 +276,8 @@ class main extends PluginBase implements Listener{
             $player = $event->getPlayer();
             if(count($player->getEffects()) != 3) {
             if($event->getItem()->getID() == 282) {
-                $player->setFood(8);
+            	$food = $player->getFood();
+                $player->setFood($food + 8);
                 $player->addEffect(Effect::getEffect(6)->setAmplifier(1)->setDuration(0)->setVisible(false));
 		$player->sendPopup("§b§oTaken soup!");
                 $player->getInventory()->removeItem(Item::get(282, 0, 1));
