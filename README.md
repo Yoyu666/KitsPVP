@@ -7,16 +7,16 @@
 
 ##Command & Permissions
 - You can set the permissions to let default player use the Kits!
-Command | Permissions |
-------- | ------- |
-/kits| kits.command
-/kit Free| kit.free.command
-/kit Archer| kit.archer.command
-/kit Warrior| kit.warrior.command
-/kit Tank| kit.tank.command
-/kit Knight| kit.knight.command
-/kit Miner| kit.miner.command
-/kit Admin| kit.admin.command
+| Commands | Permissions |
+| :---: | :---: |
+| /kits| kits.command
+| /kit Free | kit.free.command |
+| /kit Archer | kit.archer.command |
+| /kit Warrior | kit.warrior.command |
+| /kit Tank | kit.tank.command |
+| /kit Knight | kit.knight.command |
+| /kit Miner | kit.miner.command |
+| /kit Admin | kit.admin.command |
 
 ##Download & Installation.
 * LastVersion: 1.0alpha
