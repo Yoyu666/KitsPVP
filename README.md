@@ -5,19 +5,24 @@
 * Kits that have been added , many more kit will be added in the future!
 - //Ps: Thank to all for the support!Enjoy & Have Fun! ヽ(•ω•ゞ)
 
-###Free    Kit
-###Archer  Kit
-###Warrior Kit
-###Tank    Kit
-###Knight  Kit
-###Miner   Kit
-###Admin   Kit
+##Command & Permissions
+- You can set the permissions to let default player use the Kits!
+Command | Permissions |
+------- | ------- |
+/kits| kits.command
+/kit Free| kit.free.command
+/kit Archer| kit.archer.command
+/kit Warrior| kit.warrior.command
+/kit Tank| kit.tank.command
+/kit Knight| kit.knight.command
+/kit Miner| kit.miner.command
+/kit Admin| kit.admin.command
 
 ##Download & Installation.
-* LastVersion: 2.5.3
+* LastVersion: 1.0alpha
 -  //TODO in Future Version
- - [ ] Items with Enchanted [indev]
-      - soon
+ - [x] Items with Enchanted [indev]
+      - done at 1.0alpha
  - [ ] when u selecte a kit you  will have particle around the player! [Help Wanted]
       - very Soon
  - [ ] add Ninja Kit
