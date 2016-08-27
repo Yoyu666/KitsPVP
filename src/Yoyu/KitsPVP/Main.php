@@ -26,7 +26,7 @@ use pocketmine\event\player\PlayerPreLoginEvent;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerDropItemEvent;
 
-class mMin extends PluginBase implements Listener{
+class Main extends PluginBase implements Listener{
     
     public function onEnable(){
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
